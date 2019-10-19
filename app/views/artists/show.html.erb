@@ -1,0 +1,9 @@
+<h1><%= @artist.name.titlecase %>'s Artist page</h1>
+
+<ul>
+<% @songs.each do |song| %>
+<li>
+    <%= song.title.titlecase %>
+</li>
+<% end %>
+</ul>

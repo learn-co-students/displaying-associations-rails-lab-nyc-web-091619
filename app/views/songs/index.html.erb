@@ -1,0 +1,10 @@
+<h1>All the songs</h1>
+
+<ul>
+<% @songs.each do |song| %>
+<li>
+    <%= song.title.titlecase %>
+</li>
+
+<% end %>
+</ul>

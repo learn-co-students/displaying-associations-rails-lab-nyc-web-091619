@@ -1,0 +1,10 @@
+<h1>All the artists</h1>
+
+<ul>
+<% @artists.each do |artist| %>
+<li>
+    <%= artist.name.titlecase %>
+</li>
+<% end %>
+
+</ul>
