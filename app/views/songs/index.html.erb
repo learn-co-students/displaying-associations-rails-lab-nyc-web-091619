@@ -3,7 +3,7 @@
 <ul>
 <% @songs.each do |song| %>
 <li>
-    <%= song.title.titlecase %>
+    <%= link_to song.artist.name + " - " + song.title.titlecase, song_path(song) %>
 </li>
 
 <% end %>

@@ -1,9 +1,10 @@
 <h1><%= @artist.name.titlecase %>'s Artist page</h1>
 
+
 <ul>
 <% @songs.each do |song| %>
 <li>
-    <%= song.title.titlecase %>
+    <%= link_to song.title.titlecase, song_path(song) %>
 </li>
 <% end %>
 </ul>
